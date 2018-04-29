@@ -12,8 +12,6 @@ Nasm::Nasm(std::string nasmPath, std::string targetFilePath)
 
 Nasm::~Nasm()
 {
-	this->nasmPath.~basic_string();
-	this->targetFilePath.~basic_string();
 }
 void Nasm::w_bat()
 {	

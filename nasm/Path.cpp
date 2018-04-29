@@ -19,8 +19,6 @@ Path::Path()
 
 Path::~Path()
 {
-	this->nasmPath.~basic_string();
-	this->targetPath.~basic_string();
 }
 
 std::string Path::getNasmPath()
