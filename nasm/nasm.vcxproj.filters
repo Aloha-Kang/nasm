@@ -18,7 +18,10 @@
     <ClInclude Include="Nasm.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
+    <ClInclude Include="head.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Path.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -29,9 +32,12 @@
     <ClCompile Include="Main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Path.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Text.txt">
+    <Text Include="Path.txt">
       <Filter>资源文件</Filter>
     </Text>
   </ItemGroup>

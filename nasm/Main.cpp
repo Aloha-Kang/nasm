@@ -1,4 +1,4 @@
-#include"Nasm.h"
+#include"head.h"
 int main() {
 	/*Nasm *nasm = new Nasm();
 	std::cout << "输入nasm.exe的绝对路径" << std::endl;

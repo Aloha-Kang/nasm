@@ -1,4 +1,4 @@
-#include "Nasm.h"
+#include"head.h"
 
 Nasm::Nasm()
 {
