@@ -1,6 +1,6 @@
 #include"Nasm.h"
 int main() {
-	Nasm *nasm = new Nasm();
+	/*Nasm *nasm = new Nasm();
 	std::cout << "输入nasm.exe的绝对路径" << std::endl;
 	std::string nasmPath;
 	std::cin >> nasmPath;
@@ -10,6 +10,6 @@ int main() {
 	std::cin >> targetPath;
 	nasm->setTargetFilePath(targetPath);
 	nasm->w_bat();	
-	system(nasm->get_bat().c_str());
+	system(nasm->get_bat().c_str());*/
 	return 0;
 }
