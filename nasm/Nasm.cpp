@@ -53,6 +53,12 @@ std::string Nasm::getTargetFilePath()
 	return this->targetFilePath;
 }
 
+void Nasm::runBat()
+{
+	this->w_bat();
+	system(this->get_bat().c_str());
+}
+
 std::string Nasm::toCmd(std::string nasmPath, std::string targetFilePath)
 {
 	//去除文件后缀

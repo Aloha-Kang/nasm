@@ -8,17 +8,17 @@ class Nasm
 public:
 	Nasm();
 	Nasm(std::string, std::string);
-	~Nasm();
-	void w_bat();
+	~Nasm();	
 	void setNasmPath(std::string);
-	void setTargetFilePath(std::string);
-	std::string get_bat();
+	void setTargetFilePath(std::string);	
 	std::string getNasmPath();
 	std::string getTargetFilePath();
+	void runBat();
+	std::string withoutSuffix(std::string);
 private:
+	void w_bat();
+	std::string get_bat();
 	std::string nasmPath, targetFilePath;
 	//绝对路径+绝对路径
-	std::string toCmd(std::string, std::string);
-	//去除文件后缀
-	std::string withoutSuffix(std::string);
+	std::string toCmd(std::string, std::string);	
 };

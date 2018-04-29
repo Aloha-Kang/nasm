@@ -1,15 +1,10 @@
 #include"head.h"
 int main() {
-	/*Nasm *nasm = new Nasm();
-	std::cout << "输入nasm.exe的绝对路径" << std::endl;
-	std::string nasmPath;
-	std::cin >> nasmPath;
-	nasm->setNasmPath(nasmPath);
-	std::cout << "输入汇编文件的绝对路径" << std::endl;
-	std::string targetPath;
-	std::cin >> targetPath;
-	nasm->setTargetFilePath(targetPath);
-	nasm->w_bat();	
-	system(nasm->get_bat().c_str());*/
+	Path *path = new Path();
+	Nasm *nasm = new Nasm(path->getNasmPath(), path->getTargetPath());
+	nasm->runBat();	
+	std::string file = nasm->withoutSuffix(nasm->getTargetFilePath());
+	file += "bat";
+	remove(file.c_str());
 	return 0;
 }
